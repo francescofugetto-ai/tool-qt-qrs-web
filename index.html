@@ -437,7 +437,7 @@ html.js.motore-ko #nomotore{display:block}
      EHRA 2024, Tab. 11, p. 24 — la mexiletina blocca INa.
      EHRA 2024, Tab. 5, p. 8 — l'iperkaliemia allarga il QRS.
      Prontuario del capitolo (gruppo 5) — disopiramide: sospendere con QT o
-       QRS allargati oltre il 25%, scheda tecnica (Ritmodan, AIFA, resa
+       QRS allargati oltre il 25%, scheda tecnica (AIFA, resa
        disponibile il 03/03/2026). */
   var SOGLIE = { dQrs:25, qrsSforzo:130, qtc:500 };
   var LIM = { qrs:[40, 300], qtc:[250, 800] };
@@ -806,7 +806,7 @@ html.js.motore-ko #nomotore{display:block}
         if (q.esito === "pos") {
           var tq = "ΔQRS oltre il 25% o test da sforzo anormale: <b>sì</b> — " + q.motivi.join("; ") + ". La Fig. 12: considerare un altro farmaco, una dose ridotta, il dosaggio del farmaco nel sangue" + pgs(F12) + ".";
           if (F && F.sosp === "t8") tq += " Per " + F.nome.toLowerCase() + " la Tab. 8 dice di <b>sospendere</b>" + pgs(t8p(f)) + ": lettura prudente.";
-          if (F && F.sosp === "st") tq += " Per la disopiramide la scheda tecnica dice di <b>sospendere</b> con QT o QRS allargati oltre il 25% (Ritmodan, nel prontuario del capitolo): lettura prudente.";
+          if (F && F.sosp === "st") tq += " Per la disopiramide la scheda tecnica dice di <b>sospendere</b> con QT o QRS allargati oltre il 25% (nel prontuario del capitolo): lettura prudente.";
           hc += passo(tq, true);
           hc += passo("Il 25% non è un taglio assoluto: dipende dal QRS prima del farmaco e dal rischio di questo paziente (nota f)" + pgs(F12) + ".");
         } else if (q.esito === "neg") {
